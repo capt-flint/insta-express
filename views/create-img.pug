@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to create image
+    form(method='post', enctype='multipart/form-data')
+        input(type='file', name='newTxtFile')
+        input(type='submit', name='saveFile', value='Upload File')
